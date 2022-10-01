@@ -6,9 +6,31 @@ POST http://localhost:3001/ads
 Content-Type: application/json
 
 {
-  "firstName": "John",
-  "lastName": "Peter",
+  "firstName": "MKDCNP",
+  "lastName": "KLDCKN:D",
   "email": "peter@email.com",
-  "password": "emmaly",
-  "permissionLevel": 3,
+  "password": "23444"
 }
+
+###
+PATCH  http://localhost:3001/ads/63388541546a70859ff454e9
+Content-Type: application/json
+
+{
+"password": "sdpvks"
+}
+
+###
+GET  http://localhost:3001/ads/633820ffc6072bc4405d0152
+
+
+###
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+ "todoTask": "Go to school"
+}
+
+###
+GET http://localhost:3000/todos

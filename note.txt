@@ -4,3 +4,28 @@ git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/jirighoemaanuel/rest.git
 git push -u origin master
+
+
+
+git remote add origin https://github.com/jirighoemaanuel/rest.git
+git branch -M master
+git push -u origin master
+
+
+// async function createNewUser() {
+//   const user = new User({
+//     firstName: 'John',
+//     lastName: 'Peter',
+//     email: 'peter@gmail.com',
+//     password: '12345',
+//     permissionLevel: 5,
+//   });
+//   try {
+//     const newUser = await user.save();
+//     console.log(newUser);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// createNewUser();

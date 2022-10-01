@@ -1,11 +1,11 @@
 require('dotenv').config();
 const express = require('express');
-const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const app = express();
 
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
@@ -17,11 +17,11 @@ db.once('open', () => {
   console.log('Connection started');
 });
 
-const todoRouters = require('./routes/todos');
+app.use(express.json());
 
-// app.use(bodyParser.urlencoded({ extended: true }));
+const todoRouters = require('./routes/todos');
 app.use('/todos', todoRouters);
-app.use(express.json);
+
 app.listen(3000, () => {
   console.log('Server listening at port 3000');
 });
