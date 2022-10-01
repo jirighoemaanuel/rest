@@ -1,0 +1,14 @@
+
+GET http://localhost:3001/ads
+
+###
+POST http://localhost:3001/ads
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Peter",
+  "email": "peter@email.com",
+  "password": "emmaly",
+  "permissionLevel": 3,
+}
